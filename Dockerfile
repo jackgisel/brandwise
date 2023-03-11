@@ -11,7 +11,7 @@ FROM base as deps
 WORKDIR /myapp
 
 ADD package.json .npmrc ./
-RUN npm ci
+RUN npm install
 
 # Setup production node_modules
 FROM base as production-deps
@@ -30,6 +30,7 @@ WORKDIR /myapp
 COPY --from=deps /myapp/node_modules /myapp/node_modules
 
 ADD . .
+RUN npm install run-s
 RUN npm run build
 
 # Finally, build the production image with minimal footprint
