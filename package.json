@@ -99,6 +99,7 @@
   "devDependencies": {
     "@remix-run/dev": "^1.14.0",
     "@remix-run/eslint-config": "^1.14.0",
+    "@remix-run/vercel": "^1.14.1",
     "@testing-library/cypress": "^9.0.0",
     "@testing-library/dom": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.5",
