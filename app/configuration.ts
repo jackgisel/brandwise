@@ -57,10 +57,10 @@ const configuration = {
     },
   },
   email: {
-    host: '',
-    port: 587,
-    user: '',
-    password: '',
+    host: env.EMAIL_HOST,
+    port: 465,
+    user: env.EMAIL_USER,
+    password: env.EMAIL_PASS,
     senderAddress: 'Brandwise Team <info@brandwise.ai>',
   },
   sentry: {
