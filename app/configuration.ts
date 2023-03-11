@@ -6,13 +6,13 @@ const production = env.NODE_ENV === 'production';
 
 const configuration = {
   site: {
-    name: 'Awesomely - Your SaaS Title',
-    description: 'Your SaaS Description',
+    name: 'Branwise - ai brand manager',
+    description: 'Your super powered AI brand manager.',
     themeColor: '#ffffff',
     themeColorDark: '#0a0a0a',
     siteUrl: env.SITE_URL,
-    siteName: 'Awesomely',
-    twitterHandle: '',
+    siteName: 'Branwise',
+    twitterHandle: 'brandwiseai',
     githubHandle: '',
     language: 'en',
     convertKitFormId: '',
@@ -61,7 +61,7 @@ const configuration = {
     port: 587,
     user: '',
     password: '',
-    senderAddress: 'MakerKit Team <info@makerkit.dev>',
+    senderAddress: 'Brandwise Team <info@brandwise.ai>',
   },
   sentry: {
     dsn: env.SENTRY_DSN,
@@ -69,27 +69,21 @@ const configuration = {
   stripe: {
     products: [
       {
-        name: 'Basic',
-        description: 'Description of your Basic plan',
-        badge: `Up to 20 users`,
+        name: 'Start',
+        description: 'For individuals and small brands',
+        badge: `Great for testing`,
         features: [
-          'Basic Reporting',
-          'Up to 20 users',
-          '1GB for each user',
-          'Chat Support',
+          'Up to 3 social media accounts',
+          'Up to 5,000 comments processed monthly',
+          'Reply to comments in dashboard',
+          'Filter stats by page',
         ],
         plans: [
           {
             name: 'Monthly',
-            price: '$9',
-            stripePriceId: 'basic-plan-mth',
-            trialPeriodDays: 0,
-          },
-          {
-            name: 'Yearly',
-            price: '$90',
-            stripePriceId: 'basic-plan-yr',
-            trialPeriodDays: 0,
+            price: '$29',
+            stripePriceId: 'price_1MXc7fJtTwudNZ6HGFKZk0r9',
+            trialPeriodDays: 7,
           },
         ],
       },
@@ -97,37 +91,35 @@ const configuration = {
         name: 'Pro',
         badge: `Most Popular`,
         recommended: true,
-        description: 'Description of your Pro plan',
+        description:
+          'For teams with several pages and higher volume engagement',
         features: [
-          'Advanced Reporting',
-          'Up to 50 users',
-          '5GB for each user',
-          'Chat and Phone Support',
+          'Unlimited social media accounts',
+          'Up to 10,000 comments monthly',
+          'Identify comments that require a response',
+          'Reply to comments in dashboard',
+          'Filter stats by page',
         ],
         plans: [
           {
             name: 'Monthly',
-            price: '$29',
-            stripePriceId: 'pro-plan-mth',
-            trialPeriodDays: 0,
-          },
-          {
-            name: 'Yearly',
-            price: '$200',
-            stripePriceId: 'pro-plan-yr',
-            trialPeriodDays: 0,
+            price: '$69',
+            stripePriceId: 'price_1MXc8FJtTwudNZ6HyTdqxxO5',
+            trialPeriodDays: 7,
           },
         ],
       },
       {
-        name: 'Premium',
-        description: 'Description of your Premium plan',
+        name: 'Enterprise',
+        description:
+          'For large brands, marketing agencies and growing companies',
         badge: ``,
         features: [
-          'Advanced Reporting',
-          'Unlimited users',
-          '50GB for each user',
-          'Account Manager',
+          'Unlimited social media accounts',
+          'As many monthly comments as you need',
+          'Priority support',
+          'Custom capabilities',
+          'Everything in Pro',
         ],
         plans: [
           {
