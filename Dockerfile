@@ -20,7 +20,6 @@ WORKDIR /myapp
 
 COPY --from=deps /myapp/node_modules /myapp/node_modules
 ADD package.json .npmrc ./
-RUN npm prune --production
 
 # Build the app
 FROM base as build
@@ -30,7 +29,6 @@ WORKDIR /myapp
 COPY --from=deps /myapp/node_modules /myapp/node_modules
 
 ADD . .
-RUN npm install run-s
 RUN npm run build
 
 # Finally, build the production image with minimal footprint
