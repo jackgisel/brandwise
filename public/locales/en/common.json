@@ -1,6 +1,8 @@
 {
   "dashboardTabLabel": "Dashboard",
   "accountsTabLabel": "Accounts",
+  "postsTabLabel": "Posts",
+  "commentsTabLabel": "Comments",
   "organizationSettingsTabLabel": "Organization",
   "settingsTabLabel": "Settings",
   "profileSettingsTabLabel": "Profile",

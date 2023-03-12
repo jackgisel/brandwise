@@ -28,7 +28,7 @@ const configuration = {
       emailPassword: true,
       phoneNumber: false,
       emailLink: false,
-      oAuth: ['google'] as Provider[],
+      oAuth: [] as Provider[],
     },
   },
   production,
