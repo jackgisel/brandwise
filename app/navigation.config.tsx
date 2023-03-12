@@ -17,10 +17,10 @@ const NAVIGATION_CONFIG = {
       },
     },
     {
-      label: 'common:accountsTabLabel',
-      path: '/accounts',
+      label: 'common:commentsTabLabel',
+      path: '/comments',
       Icon: ({ className }: { className: string }) => {
-        return <UserCircleIcon className={className} />;
+        return <ChatBubbleBottomCenterIcon className={className} />;
       },
     },
     {
@@ -31,10 +31,10 @@ const NAVIGATION_CONFIG = {
       },
     },
     {
-      label: 'common:commentsTabLabel',
-      path: '/comments',
+      label: 'common:accountsTabLabel',
+      path: '/accounts',
       Icon: ({ className }: { className: string }) => {
-        return <ChatBubbleBottomCenterIcon className={className} />;
+        return <UserCircleIcon className={className} />;
       },
     },
     {

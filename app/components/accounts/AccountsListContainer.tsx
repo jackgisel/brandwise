@@ -4,6 +4,7 @@ import Heading from '~/core/ui/Heading';
 import Button from '~/core/ui/Button';
 import useFetchAccounts from '~/lib/accounts/hooks/use-fetch-accounts';
 import type { Account } from '~/lib/accounts/types/account';
+import Tile from '~/core/ui/Tile';
 
 const AccountsContainer: React.FC<{
   organizationId: string;
@@ -65,12 +66,65 @@ function AccountsList({
       {accounts.map((account) => {
         return <p key={account.id}>{account.id}</p>;
       })}
+      <table className={'Table'}>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Plan</th>
+            <th>MRR</th>
+            <th>Logins</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Pippin Oddo</td>
+            <td>Pro</td>
+            <td>$100.2</td>
+            <td>920</td>
+            <td>
+              <Tile.Badge trend={'up'}>Healthy</Tile.Badge>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Väinö Pánfilo</td>
+            <td>Basic</td>
+            <td>$40.6</td>
+            <td>300</td>
+            <td>
+              <Tile.Badge trend={'stale'}>Possible Churn</Tile.Badge>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Giorgos Quinten</td>
+            <td>Pro</td>
+            <td>$2004.3</td>
+            <td>1000</td>
+            <td>
+              <Tile.Badge trend={'up'}>Healthy</Tile.Badge>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Adhelm Otis</td>
+            <td>Basic</td>
+            <td>$0</td>
+            <td>10</td>
+            <td>
+              <Tile.Badge trend={'down'}>Churned</Tile.Badge>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
 
 function CreateTaskButton(props: React.PropsWithChildren) {
-  return <Button href={'/tasks/new'}>{props.children}</Button>;
+  return <Button href={'/accounts/new'}>{props.children}</Button>;
 }
 
 export default AccountsContainer;
