@@ -7,6 +7,8 @@
  */
 
 export const USERS_TABLE = `users`;
+export const ACCOUNTS_TABLE = `accounts`;
+export const COMMENTS_TABLE = `comments`;
 export const ORGANIZATIONS_TABLE = `organizations`;
 export const MEMBERSHIPS_TABLE = `memberships`;
 export const SUBSCRIPTIONS_TABLE = `subscriptions`;

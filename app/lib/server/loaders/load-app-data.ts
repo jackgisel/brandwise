@@ -59,6 +59,8 @@ const loadAppData = async ({ request }: LoaderArgs) => {
       return redirectToOnboarding();
     }
 
+    const { organization } = organizationData;
+
     const headers = new Headers();
 
     // if the organization is found, save the ID in a cookie

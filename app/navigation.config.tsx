@@ -11,6 +11,13 @@ const NAVIGATION_CONFIG = {
       },
     },
     {
+      label: 'common:accountsTabLabel',
+      path: '/accounts',
+      Icon: ({ className }: { className: string }) => {
+        return <Squares2X2Icon className={className} />;
+      },
+    },
+    {
       label: 'common:settingsTabLabel',
       path: '/settings',
       Icon: ({ className }: { className: string }) => {

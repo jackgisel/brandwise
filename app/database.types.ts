@@ -34,6 +34,64 @@ export interface Database {
   }
   public: {
     Tables: {
+      accounts: {
+        Row: {
+          connect_at: string | null
+          id: string
+          image: string | null
+          name: string | null
+          organization_id: number | null
+          token: string | null
+          type: string | null
+        }
+        Insert: {
+          connect_at?: string | null
+          id: string
+          image?: string | null
+          name?: string | null
+          organization_id?: number | null
+          token?: string | null
+          type?: string | null
+        }
+        Update: {
+          connect_at?: string | null
+          id?: string
+          image?: string | null
+          name?: string | null
+          organization_id?: number | null
+          token?: string | null
+          type?: string | null
+        }
+      }
+      comments: {
+        Row: {
+          account_id: string | null
+          can_hide: boolean | null
+          created_at: string | null
+          id: number
+          message: string | null
+          permalink: string | null
+          status: string | null
+        }
+        Insert: {
+          account_id?: string | null
+          can_hide?: boolean | null
+          created_at?: string | null
+          id?: number
+          message?: string | null
+          permalink?: string | null
+          status?: string | null
+        }
+        Update: {
+          account_id?: string | null
+          can_hide?: boolean | null
+          created_at?: string | null
+          id?: number
+          message?: string | null
+          permalink?: string | null
+          status?: string | null
+        }
+      }
       memberships: {
         Row: {
           code: string | null
@@ -234,7 +292,10 @@ export interface Database {
     Tables: {
       buckets: {
         Row: {
+          allowed_mime_types: string[] | null
+          avif_autodetection: boolean | null
           created_at: string | null
+          file_size_limit: number | null
           id: string
           name: string
           owner: string | null
@@ -242,7 +303,10 @@ export interface Database {
           updated_at: string | null
         }
         Insert: {
+          allowed_mime_types?: string[] | null
+          avif_autodetection?: boolean | null
           created_at?: string | null
+          file_size_limit?: number | null
           id: string
           name: string
           owner?: string | null
@@ -250,7 +314,10 @@ export interface Database {
           updated_at?: string | null
         }
         Update: {
+          allowed_mime_types?: string[] | null
+          avif_autodetection?: boolean | null
           created_at?: string | null
+          file_size_limit?: number | null
           id?: string
           name?: string
           owner?: string | null
