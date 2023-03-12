@@ -1,11 +1,6 @@
 import {
   FireIcon,
   UserGroupIcon,
-  UserIcon,
-  BuildingLibraryIcon,
-  CubeIcon,
-  PaintBrushIcon,
-  DocumentIcon,
   ChevronRightIcon,
   MagnifyingGlassIcon,
   EyeSlashIcon,
@@ -51,7 +46,7 @@ export default function Index() {
 
                 <span
                   className={
-                    'bg-gradient-to-br bg-clip-text text-transparent' +
+                    'bg-gradient-to-br bg-clip-text pb-1 text-transparent' +
                     ' from-primary-500 to-primary-400' +
                     ' to-primary-400 leading-[1.2]'
                   }

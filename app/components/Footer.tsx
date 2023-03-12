@@ -24,7 +24,7 @@ function Footer() {
 
               <div>
                 <p className={'text-sm text-gray-500 dark:text-gray-400'}>
-                  Add a short tagline about your product
+                  Your AI powered brand manager
                 </p>
               </div>
 
@@ -39,21 +39,21 @@ function Footer() {
 
           <div
             className={
-              'flex flex-col space-y-8 lg:space-y-0 lg:space-x-6' +
+              'flex flex-col space-y-8 lg:space-y-0 lg:space-x-10' +
               ' xl:space-x-16 2xl:space-x-20' +
               ' w-full lg:flex-row lg:justify-end'
             }
           >
             <div>
-              <div className={'flex flex-col space-y-4'}>
-                <Heading type={6}>About</Heading>
+              <div className={'flex flex-col space-y-2'}>
+                <Heading type={6}>Product</Heading>
 
                 <FooterSectionList>
                   <FooterLink>
-                    <Link to={'#'}>Who we are</Link>
+                    <Link to={'/'}>Home</Link>
                   </FooterLink>
                   <FooterLink>
-                    <Link to={'/blog'}>Blog</Link>
+                    <Link to={'/pricing'}>Pricing</Link>
                   </FooterLink>
                   <FooterLink>
                     <Link to={'/contact'}>Contact</Link>
@@ -63,42 +63,31 @@ function Footer() {
             </div>
 
             <div>
-              <div className={'flex flex-col space-y-4'}>
-                <Heading type={6}>Product</Heading>
+              <div className={'flex flex-col space-y-2'}>
+                <Heading type={6}>Company</Heading>
 
                 <FooterSectionList>
                   <FooterLink>
-                    <Link to={'/docs'}>Documentation</Link>
+                    <Link to={'https://twitter.com/BrandwiseAI'}>Twitter</Link>
                   </FooterLink>
                   <FooterLink>
-                    <Link to={'#'}>Help Center</Link>
+                    <Link
+                      to={'https://www.linkedin.com/company/brandwiseai/about/'}
+                    >
+                      Linkedin
+                    </Link>
                   </FooterLink>
                   <FooterLink>
-                    <Link to={'#'}>Changelog</Link>
+                    <Link to={'/terms'}>Terms of Service</Link>
+                  </FooterLink>
+                  <FooterLink>
+                    <Link to={'/privacy'}>Privacy Policy</Link>
                   </FooterLink>
                 </FooterSectionList>
               </div>
             </div>
 
-            <div>
-              <div className={'flex flex-col space-y-4'}>
-                <Heading type={6}>Legal</Heading>
-
-                <FooterSectionList>
-                  <FooterLink>
-                    <Link to={'#'}>Terms of Service</Link>
-                  </FooterLink>
-                  <FooterLink>
-                    <Link to={'#'}>Privacy Policy</Link>
-                  </FooterLink>
-                  <FooterLink>
-                    <Link to={'#'}>Cookie Policy</Link>
-                  </FooterLink>
-                </FooterSectionList>
-              </div>
-            </div>
-
-            <NewsletterSignup />
+            {/* <NewsletterSignup /> */}
           </div>
         </div>
       </Container>

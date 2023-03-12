@@ -57,11 +57,11 @@ function PricingTable(
     <SlideUpTransition>
       <div className={'flex flex-col space-y-12'}>
         <div className={'flex justify-center'}>
-          <PlansSwitcher
+          {/* <PlansSwitcher
             plans={STRIPE_PLANS}
             plan={planVariant}
             setPlan={setPlanVariant}
-          />
+          /> */}
         </div>
 
         <div
