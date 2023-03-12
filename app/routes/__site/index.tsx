@@ -7,6 +7,11 @@ import {
   PaintBrushIcon,
   DocumentIcon,
   ChevronRightIcon,
+  MagnifyingGlassIcon,
+  EyeSlashIcon,
+  AdjustmentsHorizontalIcon,
+  ChatBubbleLeftRightIcon,
+  LanguageIcon,
 } from '@heroicons/react/24/outline';
 
 import Heading from '~/core/ui/Heading';
@@ -17,6 +22,7 @@ import SubHeading from '~/core/ui/SubHeading';
 import Divider from '~/core/ui/Divider';
 import Container from '~/core/ui/Container';
 import SlideUpTransition from '~/core/ui/SlideUpTransition';
+import PricingTable from '~/components/PricingTable';
 
 export default function Index() {
   return (
@@ -34,14 +40,14 @@ export default function Index() {
             >
               <Button variant={'flat'} size={'small'} round>
                 <span className={'flex items-center space-x-2 font-normal'}>
-                  <span>Explore our leading solution</span>
+                  <span>Start your trial today</span>
 
                   <ChevronRightIcon className={'h-3'} />
                 </span>
               </Button>
 
               <HeroTitle>
-                <span>Tell your visitors why</span>
+                <span>Meet your AI powered</span>
 
                 <span
                   className={
@@ -50,7 +56,7 @@ export default function Index() {
                     ' to-primary-400 leading-[1.2]'
                   }
                 >
-                  your SaaS is awesome
+                  brand manager
                 </span>
               </HeroTitle>
 
@@ -60,19 +66,17 @@ export default function Index() {
                   ' flex w-10/12 flex-col space-y-1 font-heading md:w-full'
                 }
               >
-                <span>Here you can write a short description of your SaaS</span>
+                <span>Brandwise automatically hides brand-damaging,</span>
 
-                <span>
-                  This subheading is usually laid out on multiple lines.
-                </span>
+                <span>hateful, racist comments and spam from</span>
 
-                <span>Impress your customers, straight to the point.</span>
+                <span>your social media posts and ads.</span>
               </div>
 
               <div className={'flex space-x-4'}>
                 <Button round href={'/auth/sign-up'}>
                   <span className={'flex items-center space-x-2'}>
-                    <span>Get Started</span>
+                    <span>Start now for free</span>
                     <ChevronRightIcon className={'h-3'} />
                   </span>
                 </Button>
@@ -124,10 +128,10 @@ export default function Index() {
               <b className={'text-primary-500'}>Features</b>
             </div>
 
-            <Hero>The best tool in the space</Hero>
+            <Hero>Protect your brand with peace of mind</Hero>
 
             <SubHeading>
-              Unbeatable Features and Benefits for Your SaaS Business
+              24/7 protection across paid and organic social media
             </SubHeading>
           </div>
 
@@ -135,59 +139,62 @@ export default function Index() {
             <div className={'grid gap-12 lg:grid-cols-3'}>
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <UserIcon className={'h-6'} />
+                  <MagnifyingGlassIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>Authentication</Heading>
+                <Heading type={3}>Sentiment Analysis</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
-                  Secure and Easy-to-Use Authentication for Your SaaS Website
+                  Automatically hides brand-damaging, hateful, racist comments
+                  and spam from your posts and ads
                 </div>
               </div>
 
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <BuildingLibraryIcon className={'h-6'} />
+                  <EyeSlashIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>Multi-Tenancy</Heading>
+                <Heading type={3}>Discreet</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
-                  Powerful Multi-Tenancy Features for Maximum Flexibility and
-                  Efficiency
+                  Damaging comments are hidden from everyone except for the
+                  person that posted them
                 </div>
               </div>
 
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <UserGroupIcon className={'h-6'} />
+                  <AdjustmentsHorizontalIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>Team-Management</Heading>
+                <Heading type={3}>Customizable</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
-                  Effortlessly Manage and Organize Your Team Members
+                  Add your own custom keywords that will automatically be
+                  removed when detected
                 </div>
               </div>
 
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <PaintBrushIcon className={'h-6'} />
+                  <ChatBubbleLeftRightIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>UI Themes</Heading>
+                <Heading type={3}>Respond to Comments</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
-                  Customizable UI Themes to Match Your Brand and Style
+                  Comments that require a response are automatically flagged and
+                  you can easily reply in the dashboard
                 </div>
               </div>
 
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <CubeIcon className={'h-6'} />
+                  <LanguageIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>UI Components</Heading>
+                <Heading type={3}>Multi-lingual</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
                   Pre-built UI Components to Speed Up Your Development
@@ -196,17 +203,34 @@ export default function Index() {
 
               <div className={'flex flex-col space-y-3 text-center'}>
                 <FeatureIcon>
-                  <DocumentIcon className={'h-6'} />
+                  <UserGroupIcon className={'h-6'} />
                 </FeatureIcon>
 
-                <Heading type={3}>Blog and Documentation</Heading>
+                <Heading type={3}>Team Accounts</Heading>
 
                 <div className={'text-gray-500 dark:text-gray-400'}>
-                  Pre-built Blog and Documentation Pages to Help Your Users
+                  Set up unlimited user accounts under your organization to give
+                  employees easy access
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </Container>
+
+      <Divider />
+
+      <Container>
+        <div className={'mb-10 flex flex-col space-y-8'}>
+          <div className={'flex flex-col items-center'}>
+            <Hero>Pricing</Hero>
+            <SubHeading>
+              Flexible monthly pricing for teams of all sizes. Start with a free
+              7-day trial.
+            </SubHeading>
+          </div>
+
+          <PricingTable />
         </div>
       </Container>
 
@@ -224,12 +248,14 @@ export default function Index() {
             <div className={'flex flex-col justify-between space-y-2'}>
               <Heading type={3}>
                 <p className={'text-gray-800 dark:text-white'}>
-                  The application you were waiting for.
+                  What are you waiting for?
                 </p>
               </Heading>
 
               <Heading type={4}>
-                <p className={'text-primary-500'}>Sign up for free, today.</p>
+                <p className={'text-primary-500'}>
+                  Sign up now and get your first 7 days for free.
+                </p>
               </Heading>
             </div>
 
@@ -240,7 +266,7 @@ export default function Index() {
                   size={'large'}
                   href={'/auth/sign-up'}
                 >
-                  Get Started for free
+                  Get Started
                 </Button>
               </div>
 
