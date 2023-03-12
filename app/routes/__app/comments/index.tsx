@@ -1,7 +1,7 @@
 import React from 'react';
 import type { MetaFunction } from '@remix-run/node';
 import { Trans } from 'react-i18next';
-import { Squares2X2Icon } from '@heroicons/react/24/outline';
+import { ChatBubbleBottomCenterIcon } from '@heroicons/react/24/outline';
 
 import ClientOnly from '~/core/ui/ClientOnly';
 import AppHeader from '~/components/AppHeader';
@@ -22,10 +22,10 @@ function CommentsPage() {
     <>
       <AppHeader>
         <span className={'flex space-x-2'}>
-          <Squares2X2Icon className="w-6" />
+          <ChatBubbleBottomCenterIcon className="w-6" />
 
           <span>
-            <Trans i18nKey={'common:accountsTabLabel'} />
+            <Trans i18nKey={'common:commentsTabLabel'} />
           </span>
         </span>
       </AppHeader>
