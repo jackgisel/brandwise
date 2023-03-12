@@ -4,7 +4,11 @@ const LogoImage: React.FCC<{
   className?: string;
 }> = ({ className }) => {
   return (
-    <img src="/assets/images/brandwise-dark-mode.png" alt="brandwise logo" />
+    <img
+      width={178}
+      src="/assets/images/brandwise-dark-mode.png"
+      alt="brandwise logo"
+    />
   );
 };
 
