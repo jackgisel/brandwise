@@ -14,7 +14,7 @@ export function getStoredTheme() {
   try {
     return getCookie(THEME_KEY) ?? LIGHT_THEME_CLASSNAME;
   } catch (e) {
-    return LIGHT_THEME_CLASSNAME;
+    return DARK_THEME_CLASSNAME;
   }
 }
 
